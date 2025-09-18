@@ -36,6 +36,11 @@
         .font-inter{
               font-family: "Inter", sans-serif;
         }
+        .cusome-input::placeholder{
+              font-family: "Poppins", sans-serif;
+              font-size: 20px;
+              color: #ccc;
+        }
       </style>
 </head>
 <body>
@@ -65,7 +70,7 @@
   </div>
   
   <div class="md:block hidden w-[20%]">
-    <label class="input bg-[#F1F1F1] rounded-[60px] p-2">
+    <label class="input bg-[#F1F1F1] rounded-[60px] p-2 focus: outline-none">
   
   <input type="search" required placeholder="Search" />
   <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -196,12 +201,13 @@
     <!-- header end -->
      <!-- section -->
       <section class="mt-16 md:container md:mx-auto">
-        <h2 class="font-poppins text-[#1F1F1F] text-3xl font-semibold mb-10">Categories</h2>
+        <!-- categories -->
+         <h2 class="font-poppins text-[#1F1F1F] text-3xl font-semibold mb-10">Categories</h2>
         <div>
           <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7">
             <div class="card" style="background: linear-gradient(152deg, #FF9C35 1.47%, #FFD019 97.17%);"> 
   <div class="card-body">
-    <div class="flex items-center justify-evenly">
+    <div class="flex items-center justify-around">
       <h2 class="card-title text-3xl font-normal font-poppins text-white">Watch</h2>
     <img src="img/trzcacak 1.png" alt="Watch">
     </div>
@@ -209,7 +215,7 @@
 </div>   
         <div class="card" style="background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);"> 
   <div class="card-body">
-    <div class="flex items-center justify-evenly">
+    <div class="flex items-center justify-around">
       <h2 class="card-title text-3xl font-normal font-poppins text-white">Shoes</h2>
     <img src="img/trzcacak 2.png" alt="shoes">
     </div>
@@ -217,18 +223,145 @@
 </div>   
         <div class="card" style="background: linear-gradient(170deg, #4289FF -10.89%, #3F07F8 92.77%);"> 
   <div class="card-body">
-    <div class="flex items-center justify-evenly">
+    <div class="flex items-center justify-around">
       <h2 class="card-title text-3xl font-normal font-poppins text-white">Bag</h2>
     <img src="img/backpack.png" alt="bag">
     </div>
   </div>
 </div>   
-
     </div>
           </div>
-
-
+        <!-- categories -->
+         <!-- shoes -->
+          <div class="bg-[#f4f4f4] mt-16 py-[78px]">
+            <!-- shoes content -->
+            <div class="flex justify-between mb-8">
+              <h2 class="text-[#1F1F1F] text-3xl font-poppins font-semibold">Shoes</h2>
+              <h2 class="text-[#FF9D00] text-[20px] font-normal font-poppins">See All</h2>
+            </div>
+            <!-- shoes content -->
+             <!-- shoes box -->
+            <div class="flex justify-center">
+              <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <div class="card bg-[#FFF] p-4">
+  <figure>
+    <img
+      src="img/pngfuel.png"
+      alt="Shoes" class="mb-[20px]" />
+  </figure>
+  <div class="card-body text-center">
+    <h2 class="card-title flex justify-center text-[#1F1F1F] font-poppins text-[24px] font-semibold mb-4">Reebok Dart Men’s Shoes</h2>
+    <p class="text-[#4E4E4E] text-base font-inter font-normal leading-6">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint.</p>
+    <h3 class="font-poppins text-[24px] text-[#000] font-normal">$1289</h3>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary bg-[#000] text-[#FFF] font-inter text-base font-medium px-5 py-[14px]">Buy Now <i class="fa-solid fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+</div>
+        <div class="card bg-[#FFF] p-4">
+  <figure>
+    <img
+      src="img/pngfuel (1).png"
+      alt="Shoes" class="mb-[20px]" />
+  </figure>
+  <div class="card-body text-center">
+    <h2 class="card-title flex justify-center text-[#1F1F1F] font-poppins text-[24px] font-semibold mb-4">Reebok Pump</h2>
+    <p class="text-[#4E4E4E] text-base font-inter font-normal leading-6 mb-4">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint.</p>
+    <h3 class="font-poppins text-[24px] text-[#000] font-normal mb-4">$799</h3>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary bg-[#000] text-[#FFF] font-inter text-base font-medium px-5 py-[14px]">Buy Now <i class="fa-solid fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+</div>
+                  <div class="card bg-[#FFF] p-4">
+  <figure>
+    <img
+      src="img/pngfuel (2).png"
+      alt="Shoes" class="mb-[20px]" />
+  </figure>
+  <div class="card-body text-center">
+    <h2 class="card-title flex justify-center text-[#1F1F1F] font-poppins text-[24px] font-semibold">Reebok All Terrain</h2>
+    <p class="text-[#4E4E4E] text-base font-inter font-normal leading-6">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint.</p>
+    <h3 class="font-poppins text-[24px] text-[#000] font-normal">$699</h3>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary bg-[#000] text-[#FFF] font-inter text-base font-medium px-5 py-[14px]">Buy Now <i class="fa-solid fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+               <!-- shoes box -->            
+                 <!-- bag content -->
+            <div class="flex justify-between mt-14 mb-8">
+              <h2 class="text-[#1F1F1F] text-3xl font-poppins font-semibold">Backpack</h2>
+              <h2 class="text-[#FF9D00] text-[20px] font-normal font-poppins">See All</h2>
+            </div>
+            <!-- bag content -->
+             <!-- bag box -->
+              <div class="flex justify-center">
+              <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <div class="card bg-[#FFF] p-4">
+  <figure>
+    <img
+      src="img/bag 1.png"
+      alt="Shoes" class="mb-[20px]" />
+  </figure>
+  <div class="card-body text-center">
+    <h2 class="card-title flex justify-center text-[#1F1F1F] font-poppins text-[24px] font-semibold mb-4">Ison Backpack</h2>
+    <p class="text-[#4E4E4E] text-base font-inter font-normal leading-6">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint.</p>
+    <h3 class="font-poppins text-[24px] text-[#000] font-normal">$1289</h3>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary bg-[#000] text-[#FFF] font-inter text-base font-medium px-5 py-[14px]">Buy Now <i class="fa-solid fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+</div>
+        <div class="card bg-[#FFF] p-4">
+  <figure>
+    <img
+      src="img/bag 2.png"
+      alt="Shoes" class="mb-[20px]" />
+  </figure>
+  <div class="card-body text-center">
+    <h2 class="card-title flex justify-center text-[#1F1F1F] font-poppins text-[24px] font-semibold mb-4">Biaowang Backpack</h2>
+    <p class="text-[#4E4E4E] text-base font-inter font-normal leading-6 mb-4">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint.</p>
+    <h3 class="font-poppins text-[24px] text-[#000] font-normal mb-4">$799</h3>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary bg-[#000] text-[#FFF] font-inter text-base font-medium px-5 py-[14px]">Buy Now <i class="fa-solid fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+</div>
+                  <div class="card bg-[#FFF] p-4">
+  <figure>
+    <img
+      src="img/bag 3.png"
+      alt="Shoes" class="mb-[20px]" />
+  </figure>
+  <div class="card-body text-center">
+    <h2 class="card-title flex justify-center text-[#1F1F1F] font-poppins text-[24px] font-semibold">Dxyizu WS54 Smart</h2>
+    <p class="text-[#4E4E4E] text-base font-inter font-normal leading-6">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint.</p>
+    <h3 class="font-poppins text-[24px] text-[#000] font-normal">$699</h3>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary bg-[#000] text-[#FFF] font-inter text-base font-medium px-5 py-[14px]">Buy Now <i class="fa-solid fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+             <!-- bag box -->
+            </div>
+         <!-- shoes -->
       </section>
      <!-- section -->
+      <!-- footer -->
+       <footer class="bg-[#FFF] lg:px-[100px] md:px-[20px] sm: px-0 py-[75px]">
+        <div class="md:container md:mx-auto bg-[#FFF2F1] rounded-2xl lg:px-[264px] md:px-[100px] py-[146px]">
+            <div class="text-center">
+              <h2 class="text-[#1F1F1F] font-poppins text-3xl font-semibold mb-2">LET'S STAY IN TOUCH</h2>
+            <p class="text-[#707070] text-base font-poppins font-normal mb-3">Get updates on sales specials and more</p>
+            <input type="text" placeholder="Enter your email" class="input input-ghost cusome-input bg-[#FFF] px-6 py-6 focus:outline-none" /><a class="text-[20px] font-normal font-poppins px-4 py-2 rounded-r-lg text-white " style="background: linear-gradient(180deg, #FF589B 0%, #FF136F 100%);" href="#">Send</a>
+            </div>
+        </div>
+       </footer>
+      <!-- footer -->
 </body>
 </html>
